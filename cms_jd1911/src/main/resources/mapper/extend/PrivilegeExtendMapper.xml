@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" 
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.example.demo.dao.extend.PrivilegeExtendMapper">
+
+  <resultMap id="privilegeResultMap" type="com.example.demo.bean.Privilege"
+  extends="com.example.demo.dao.PrivilegeMapper.BaseResultMap">
+  </resultMap>
+  
+  <select id="findByParentId"  resultMap="privilegeResultMap">
+  	select *
+ 	from cms_privilege
+ 	where parent_id=#{id}
+  </select>
+  
+   <select id="findNull"  resultMap="privilegeResultMap">
+  	select *
+ 	from cms_privilege
+ 	where parent_id is null
+  </select>
+</mapper>
