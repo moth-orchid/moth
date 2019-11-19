@@ -1,0 +1,5 @@
+com.briup.util.LogImpl.logTest(LogImpl.java:13)-Debug日志
+com.briup.util.LogImpl.logTest(LogImpl.java:14)-Debug日志
+com.briup.server.ServerImpl.get(ServerImpl.java:25)-等待连接
+com.briup.client.ClientImpl.send(ClientImpl.java:36)-连接成功
+com.briup.server.ServerImpl.get(ServerImpl.java:33)-接收到所有数据
